@@ -1,0 +1,21 @@
+name: competing_opts
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - numpy
+  - pandas
+  - bottleneck
+  - xarray
+  - scipy
+  - sympy
+  - joblib
+  - pdfminer3k
+  - lmfit
+  - numdifftools
+  - matplotlib
+  - cycler
+  - pip
+  - pip:
+    - researchpy
+    #- dominance_analysis

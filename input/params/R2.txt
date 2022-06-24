@@ -1,0 +1,71 @@
+
+[[Photosynthetic parameters]]
+    Vmax25:  92.6818877593
+    Jmax25:  152.1209851553
+    JV:  1.6413237671
+    Rlref:  1.3538731678
+
+[[Hydaulic parameters]]
+    r_k:  0.9241433311
+
+[[Soil parameters]]
+    Ztop:  0.0500000000
+    Zbottom:  0.4807053150
+    bch:  5.1274064030
+    hyds:  0.0000164556
+    Psie: -0.0012904784
+    theta_sat:  0.3866718613
+    fc:  0.1948761011
+    pwp:  0.0875677315
+
+[[Fit Statistics]]
+    # fitting method   = differential_evolution
+    # function evals   = 92
+    # data points      = 99
+    # variables        = 1
+    chi-square         = 263.479897
+    reduced chi-square = 2.68857038
+    Akaike info crit   = 98.9068651
+    Bayesian info crit = 101.501985
+##  Warning: uncertainties could not be estimated:
+[[Variables]]
+    can_sat:  9.94960725 (init = 0)
+    kcanint:  0.7 (fixed)
+
+[[Fit Statistics]]
+    # fitting method   = differential_evolution
+    # function evals   = 261
+    # data points      = 87
+    # variables        = 1
+    chi-square         = 41.6359682
+    reduced chi-square = 0.48413916
+    Akaike info crit   = -62.1141024
+    Bayesian info crit = -59.6481943
+[[Variables]]
+    kmax:  1.02251437 +/- 5.6404e-04 (0.06%) (init = 1)
+
+[[Fit Statistics]]
+    # fitting method   = differential_evolution
+    # function evals   = 450
+    # data points      = 87
+    # variables        = 2
+    chi-square         = 242.711435
+    reduced chi-square = 2.85542864
+    Akaike info crit   = 93.2589643
+    Bayesian info crit = 98.1907806
+##  Warning: uncertainties could not be estimated:
+[[Variables]]
+    g1:   1.96707904 +/-        nan (nan%) (init = 1)
+    sfw:  0.26164300 +/-        nan (nan%) (init = 0.2)
+
+[[Fit Statistics]]
+    # fitting method   = differential_evolution
+    # function evals   = 113
+    # data points      = 96
+    # variables        = 1
+    chi-square         = 162.739237
+    reduced chi-square = 1.71304460
+    Akaike info crit   = 52.6688919
+    Bayesian info crit = 55.2332400
+[[Variables]]
+    r_soil:  0.81648875 +/- 0.02367858 (2.90%) (init = 0.5)

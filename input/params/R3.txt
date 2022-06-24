@@ -1,0 +1,70 @@
+
+[[Photosynthetic parameters]]
+    Vmax25:  92.0639224359
+    Jmax25:  138.8816152056
+    JV:  1.5085346304
+    Rlref:  1.0870742316
+
+[[Hydaulic parameters]]
+    r_k:  0.8774287287
+
+[[Soil parameters]]
+    Ztop:  0.0500000000
+    Zbottom:  0.5080408111
+    bch:  4.0621930688
+    hyds:  0.0000180460
+    Psie: -0.0013218858
+    theta_sat:  0.3832129291
+    fc:  0.1731377666
+    pwp:  0.0630682977
+
+[[Fit Statistics]]
+    # fitting method   = differential_evolution
+    # function evals   = 102
+    # data points      = 99
+    # variables        = 2
+    chi-square         = 688.813734
+    reduced chi-square = 7.10117251
+    Akaike info crit   = 196.045253
+    Bayesian info crit = 201.235493
+##  Warning: uncertainties could not be estimated:
+[[Variables]]
+    can_sat:  5.98620314 (init = 0)
+    kcanint:  0.59440469 (init = 0.7)
+
+[[Fit Statistics]]
+    # fitting method   = differential_evolution
+    # function evals   = 278
+    # data points      = 71
+    # variables        = 1
+    chi-square         = 76.1577453
+    reduced chi-square = 1.08796779
+    Akaike info crit   = 6.97901050
+    Bayesian info crit = 9.24169038
+[[Variables]]
+    kmax:  1.36816698 +/- 8.6620e-04 (0.06%) (init = 1)
+
+[[Fit Statistics]]
+    # fitting method   = differential_evolution
+    # function evals   = 369
+    # data points      = 71
+    # variables        = 2
+    chi-square         = 198.610241
+    reduced chi-square = 2.87840928
+    Akaike info crit   = 77.0351750
+    Bayesian info crit = 81.5605348
+[[Variables]]
+    g1:   2.83096233 +/- 0.05161852 (1.82%) (init = 1)
+    sfw:  2.00000000 +/- 5.3301e-17 (0.00%) (init = 0.2)
+
+[[Fit Statistics]]
+    # fitting method   = differential_evolution
+    # function evals   = 85
+    # data points      = 96
+    # variables        = 1
+    chi-square         = 77.9153550
+    reduced chi-square = 0.82016163
+    Akaike info crit   = -18.0376141
+    Bayesian info crit = -15.4732659
+[[Variables]]
+    r_soil:  0.82293623 +/- 0.01177882 (1.43%) (init = 0.5)

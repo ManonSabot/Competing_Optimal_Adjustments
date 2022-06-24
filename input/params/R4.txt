@@ -1,0 +1,72 @@
+
+[[Photosynthetic parameters]]
+    Vmax25:  85.3125330320
+    Jmax25:  147.0274675822
+    JV:  1.7233982201
+    Rlref:  1.1962591404
+
+[[Hydaulic parameters]]
+    r_k:  0.9410765241
+
+[[Soil parameters]]
+    Ztop:  0.0500000000
+    Zbottom:  0.4840300400
+    bch:  5.1335297493
+    hyds:  0.0000137738
+    Psie: -0.0012137961
+    theta_sat:  0.3901088008
+    fc:  0.2026918831
+    pwp:  0.0911477468
+
+[[Fit Statistics]]
+    # fitting method   = differential_evolution
+    # function evals   = 219
+    # data points      = 99
+    # variables        = 2
+    chi-square         = 268.800500
+    reduced chi-square = 2.77113918
+    Akaike info crit   = 102.886112
+    Bayesian info crit = 108.076352
+##  Warning: uncertainties could not be estimated:
+[[Variables]]
+    can_sat:  10.4649648 (init = 0)
+    kcanint:  0.7 (fixed)
+
+[[Fit Statistics]]
+    # fitting method   = differential_evolution
+    # function evals   = 237
+    # data points      = 87
+    # variables        = 1
+    chi-square         = 30.2946885
+    reduced chi-square = 0.35226382
+    Akaike info crit   = -89.7794076
+    Bayesian info crit = -87.3134995
+[[Variables]]
+    kmax:  0.83760771 +/- 5.4363e-04 (0.06%) (init = 1)
+
+[[Fit Statistics]]
+    # fitting method   = differential_evolution
+    # function evals   = 414
+    # data points      = 87
+    # variables        = 2
+    chi-square         = 80.4122617
+    reduced chi-square = 0.94602661
+    Akaike info crit   = -2.85050572
+    Bayesian info crit = 2.08131052
+[[Variables]]
+    g1:   1.89956812 +/- 0.08328344 (4.38%) (init = 1)
+    sfw:  0.91984594 +/- 0.24554219 (26.69%) (init = 0.2)
+[[Correlations]] (unreported correlations are < 0.100)
+    C(g1, sfw) =  0.524
+
+[[Fit Statistics]]
+    # fitting method   = differential_evolution
+    # function evals   = 100
+    # data points      = 96
+    # variables        = 1
+    chi-square         = 102.775295
+    reduced chi-square = 1.08184521
+    Akaike info crit   = 8.54689398
+    Bayesian info crit = 11.1112422
+[[Variables]]
+    r_soil:  0.86852632 +/- 0.01452076 (1.67%) (init = 0.5)

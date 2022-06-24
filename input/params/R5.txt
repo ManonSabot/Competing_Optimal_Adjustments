@@ -1,0 +1,72 @@
+
+[[Photosynthetic parameters]]
+    Vmax25:  85.8667384748
+    Jmax25:  150.7364202738
+    JV:  1.7554692649
+    Rlref:  1.4280096922
+
+[[Hydaulic parameters]]
+    r_k:  0.9522594340
+
+[[Soil parameters]]
+    Ztop:  0.0500000000
+    Zbottom:  0.5420915841
+    bch:  4.9223136293
+    hyds:  0.0000122147
+    Psie: -0.0012780066
+    theta_sat:  0.3972216378
+    fc:  0.2044651456
+    pwp:  0.0889643005
+
+[[Fit Statistics]]
+    # fitting method   = differential_evolution
+    # function evals   = 47
+    # data points      = 99
+    # variables        = 1
+    chi-square         = 679.359030
+    reduced chi-square = 6.93223500
+    Akaike info crit   = 192.676960
+    Bayesian info crit = 195.272080
+##  Warning: uncertainties could not be estimated:
+[[Variables]]
+    can_sat:  6.76813861 (init = 0)
+    kcanint:  0.80491708 (init = 0.7)
+
+[[Fit Statistics]]
+    # fitting method   = differential_evolution
+    # function evals   = 215
+    # data points      = 87
+    # variables        = 1
+    chi-square         = 130.622434
+    reduced chi-square = 1.51886551
+    Akaike info crit   = 37.3570489
+    Bayesian info crit = 39.8229570
+[[Variables]]
+    kmax:  1.62958403 +/- 6.5063e-04 (0.04%) (init = 1)
+
+[[Fit Statistics]]
+    # fitting method   = differential_evolution
+    # function evals   = 243
+    # data points      = 87
+    # variables        = 2
+    chi-square         = 368.602098
+    reduced chi-square = 4.33649527
+    Akaike info crit   = 129.611437
+    Bayesian info crit = 134.543253
+[[Variables]]
+    g1:   4.33396150 +/- 0.09607457 (2.22%) (init = 1)
+    sfw:  1.69915131 +/- 0.41947487 (24.69%) (init = 0.2)
+[[Correlations]] (unreported correlations are < 0.100)
+    C(g1, sfw) =  0.197
+
+[[Fit Statistics]]
+    # fitting method   = differential_evolution
+    # function evals   = 130
+    # data points      = 96
+    # variables        = 1
+    chi-square         = 61.3223238
+    reduced chi-square = 0.64549815
+    Akaike info crit   = -41.0276072
+    Bayesian info crit = -38.4632590
+[[Variables]]
+    r_soil:  0.85080121 +/- 0.01155542 (1.36%) (init = 0.5)
