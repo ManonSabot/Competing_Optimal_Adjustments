@@ -1,0 +1,134 @@
+### The TractLSM can be used in several configurations, determined by a number
+### of switches supplied to run the model. Therefore, this text file is a setup
+### file equivalent to a LSM namelist.
+
+# Throughout the file, 'None' or 'default' entries are the equivalent of
+# commenting out the lines.
+# When giving a file name, the absolute path is needed.
+
+
+## 1. Site level runs
+
+# The site can be set to match a meteorological forcing file for a specific
+# site, e.g. 'Tumbarumba'. At a given site, a specific run year can be chosen.
+# Alternatively, 'None' calls a weather generator which uses idealised
+# meteorological forcing to run the model. In that case, the year must be set
+# to 'None'.
+
+site = EucFACER1
+year = None
+
+
+## 2. Specifications for the weather generator
+
+# The weather generator should preferably be called upon when running an
+# idealised experiment. Yet, a start day (e.g. doy = 1, i.e. Jan 1st) and a
+# duration for the run (e.g. Nday = 1. runs for the start day only) have to be
+# chosen. If the model is being run at site level, it does not matter what the
+# doy and Ndays switches equate to.
+
+doy = 1.
+Ndays = 1.
+
+
+## 3. Using a specific set of parameters
+
+# Specific parameters should either be kept in a csv file (e.g. containing
+# sites' info) or in a class within a python file (setup like the default
+# parameters in TractLSM/Utils/).
+# When importing the parameters from a python class, the import can differ
+# depending on your machine. So you might have to modify the retrieve_class
+# function in TractLSM/Utils/general_utils.py, which is not recommended.
+
+params = default
+
+
+## 4. Choosing the model configuration
+
+# If you do not want to run the model for the full length of the timeseries
+# (e.g., only running for the first 10 hours for testing purposes), you must
+# specify the number of timesteps if must be run for. If no timestep number is
+# specified, the full length of the timeseries is run.
+
+Nsteps = None
+
+
+# The models switch allows you to pick the C-H2O flux solver(s). If the switch
+# is left unspecified (i.e., commented out or set to 'default'), the default
+# configurations are run (i.e., both 'USO' and 'ProfitMax').
+# Possible choices are: 'USO', 'ProfitMax'; any of those two configurations can
+# be run alone.
+
+models = ProfitMax
+
+
+# The default model configuration runs a dynamic soil hydrology scheme.
+# However, soil moisture can be included in the forcing file, and the model can
+# be run with this driver by setting soilwater to 'prescribed'.
+
+soilwater = default
+
+
+# The Farquhar photosynthesis model is the default recommended photosynthesis
+# model (i.e., 'default' is equivalent to 'Farquhar').
+# The Collatz model can be run instead by choosing 'Collatz'.
+
+photo = default
+
+
+# The matricial optimisation solver runs at a relatively 'low' resolution, by
+# default. When running the model over short timescales, it may be worth
+# exploring the effects of running at 'med' or 'high' resolutions.
+
+resolution = default
+
+
+# Hydraulic legacies (e.g., temporary decrease in maximum hydraulic conductance
+# due to drought, delayed recovery from embolism, etc.) are not accounted for
+# by default, but can be every N days. For example, setting fhydralegs = 20
+# computes hydraulic legacies every 20 days.
+
+fhydralegs = 30
+
+
+# By default, the maximum RuBP carboxylation transport rate at 25 degC (Vmax25)
+# and the maximum electron transport rate at 25 degC (Jmax25) are kept constant.
+# However, they can be made to vary by calling the optimal N leaf allocation
+# module, which shuffles leaf N into different allocation pools every N days,
+# with the aim to maximise future net C assimilation, depending on antecedent
+# environmental conditions (over the previous N days). For example, fleafNopt
+# set to 14 optimises Vmax25 and Jmax25 to maximise C uptake on a 14-day basis.
+
+fleafNopt = 7
+
+
+# The tag refers to the unique name associated with the model configuration of
+# the run. By default, it is based on the models and options that have been
+# called upon. For example, calling the default couplers, default photosynthetic
+# model, a low resolution for the hydraulic stream, fhydralegs every 20 days,
+# fleafNopt every 14 days, and setting Nsteps to 1000 will yield the tag:
+# 'UP-F-Rlow-Leg20-JV14-N1000'
+# However, any tag can be specified by the user.
+
+tag = default
+
+
+## 5. Generating default figures
+
+# If plot is set to 'yes', several default figures may be generated, depending
+# on the configuration of the run. These can be: a comparison of the different
+# optimisation configurations, a comparison of the different optimisation
+# configurations with the USO, or a comparison of the Farquhar and Collatz
+# photosynthesis models.
+
+plot = None
+
+
+## 6. Assigning the model run to a specific project
+
+# When no project name is specified, all input and output files are stored
+# directly in the input & output repositories. Otherwise, input and output files
+# are stored in folders named after the project, i.e., input/project1/ and
+# output/project1/.
+
+project = None
